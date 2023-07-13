@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:shoe_store/pages/detail_chat_page.dart';
+import 'package:shoe_store/pages/home/main_page.dart';
 import 'package:shoe_store/pages/sign_in_page.dart';
 import 'package:shoe_store/pages/sign_up_page.dart';
 import 'package:shoe_store/pages/splash_page.dart';
@@ -17,6 +19,8 @@ class MyApp extends StatelessWidget {
         '/': (context) => const SplashPage(),
         '/sign-in': (context) => const SignInPage(),
         '/sign-up': (context) => const SignUpPage(),
+        '/home': (context) => const MainPage(),
+        '/detail-chat': (context) => const DetailChatPage(),
       },
     );
   }
