@@ -30,7 +30,8 @@ class _SplashPageState extends State<SplashPage> {
           width: 130,
           height: 150,
           decoration: const BoxDecoration(
-              image: DecorationImage(image: AssetImage('assets/Union.png'))),
+              image:
+                  DecorationImage(image: AssetImage('assets/splash_logo.png'))),
         ),
       ),
     );

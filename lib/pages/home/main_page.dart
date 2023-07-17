@@ -22,7 +22,7 @@ class _MainPageState extends State<MainPage> {
         onPressed: () {},
         backgroundColor: secondaryColor,
         child: Image.asset(
-          'assets/Cart Icon.png',
+          'assets/cart_icon.png',
           width: 20,
         ),
       );
@@ -54,7 +54,7 @@ class _MainPageState extends State<MainPage> {
                     bottom: 10,
                   ),
                   child: Image.asset(
-                    'assets/Home.png',
+                    'assets/home_icon.png',
                     width: 21,
                     color: currentIndex == 0 ? primaryColor : disableColor,
                   ),
@@ -68,7 +68,7 @@ class _MainPageState extends State<MainPage> {
                     bottom: 10,
                   ),
                   child: Image.asset(
-                    'assets/Chat Icon.png',
+                    'assets/chat_icon.png',
                     width: 20,
                     color: currentIndex == 1 ? primaryColor : disableColor,
                   ),
@@ -82,7 +82,7 @@ class _MainPageState extends State<MainPage> {
                     bottom: 10,
                   ),
                   child: Image.asset(
-                    'assets/Wishlist Icon.png',
+                    'assets/wishlist_icon.png',
                     width: 20,
                     color: currentIndex == 2 ? primaryColor : disableColor,
                   ),
@@ -96,7 +96,7 @@ class _MainPageState extends State<MainPage> {
                     bottom: 10,
                   ),
                   child: Image.asset(
-                    'assets/Profile.png',
+                    'assets/profile_icon.png',
                     width: 20,
                     color: currentIndex == 3 ? primaryColor : disableColor,
                   ),

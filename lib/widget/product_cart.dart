@@ -23,7 +23,7 @@ class ProductCart extends StatelessWidget {
             height: 30,
           ),
           Image.asset(
-            'assets/Image_Shoe.png',
+            'assets/shoe_image.png',
             width: 215,
             height: 150,
             fit: BoxFit.cover,

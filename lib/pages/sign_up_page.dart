@@ -37,8 +37,10 @@ class SignUpPage extends StatelessWidget {
           children: [
             Text(
               'Full Name',
-              style:
-                  primaryTextStyle.copyWith(fontSize: 16, fontWeight: medium),
+              style: primaryTextStyle.copyWith(
+                fontSize: 16,
+                fontWeight: medium,
+              ),
             ),
             const SizedBox(
               height: 12,
@@ -56,7 +58,7 @@ class SignUpPage extends StatelessWidget {
                 child: Row(
                   children: [
                     Image.asset(
-                      'assets/Name_Icon.png',
+                      'assets/name_icon.png',
                       width: 16,
                     ),
                     const SizedBox(
@@ -70,7 +72,7 @@ class SignUpPage extends StatelessWidget {
                           hintStyle: subtitleTextStyle,
                         ),
                       ),
-                    )
+                    ),
                   ],
                 ),
               ),
@@ -107,7 +109,7 @@ class SignUpPage extends StatelessWidget {
                 child: Row(
                   children: [
                     Image.asset(
-                      'assets/Username_Icon.png',
+                      'assets/username_icon.png',
                       width: 16,
                     ),
                     const SizedBox(
@@ -158,7 +160,7 @@ class SignUpPage extends StatelessWidget {
                 child: Row(
                   children: [
                     Image.asset(
-                      'assets/Email_Icon.png',
+                      'assets/email_icon.png',
                       width: 17,
                     ),
                     const SizedBox(
@@ -211,7 +213,7 @@ class SignUpPage extends StatelessWidget {
                 child: Row(
                   children: [
                     Image.asset(
-                      'assets/Password_Icon.png',
+                      'assets/password_icon.png',
                       width: 18,
                     ),
                     const SizedBox(

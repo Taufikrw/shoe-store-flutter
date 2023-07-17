@@ -56,7 +56,7 @@ class SignInPage extends StatelessWidget {
                 child: Row(
                   children: [
                     Image.asset(
-                      'assets/Email_Icon.png',
+                      'assets/email_icon.png',
                       width: 17,
                     ),
                     const SizedBox(
@@ -109,7 +109,7 @@ class SignInPage extends StatelessWidget {
                 child: Row(
                   children: [
                     Image.asset(
-                      'assets/Password_Icon.png',
+                      'assets/password_icon.png',
                       width: 18,
                     ),
                     const SizedBox(
