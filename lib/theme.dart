@@ -12,6 +12,7 @@ Color backgroundColor2 = const Color(0xff2B2937);
 Color backgroundColor3 = const Color(0xff242231);
 Color backgroundColor4 = const Color(0xff252836);
 Color backgroundColor5 = const Color(0xff2B2844);
+Color backgroundColor6 = const Color(0xffECEDEF);
 Color primaryTextColor = const Color(0xffE1E1E1);
 Color secondaryTextColor = const Color(0xff999999);
 Color subtitleColor = const Color(0xff504F5E);
@@ -30,6 +31,8 @@ TextStyle subtitleTextStyle = GoogleFonts.poppins(color: subtitleColor);
 TextStyle purpleTextStyle = GoogleFonts.poppins(color: primaryColor);
 
 TextStyle blackTextStyle = GoogleFonts.poppins(color: blackColor);
+
+TextStyle alertTextStyle = GoogleFonts.poppins(color: alertColor);
 
 FontWeight light = FontWeight.w300;
 FontWeight reguler = FontWeight.w400;
