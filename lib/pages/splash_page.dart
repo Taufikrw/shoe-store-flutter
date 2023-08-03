@@ -1,6 +1,8 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:shoe_store/providers/product_provider.dart';
 import 'package:shoe_store/theme.dart';
 
 class SplashPage extends StatefulWidget {
@@ -13,12 +15,18 @@ class SplashPage extends StatefulWidget {
 class _SplashPageState extends State<SplashPage> {
   @override
   void initState() {
-    // TODO: implement initState
-
-    Timer(const Duration(seconds: 3),
-        () => Navigator.pushNamed(context, '/sign-in'));
+    getInit();
 
     super.initState();
+  }
+
+  getInit() async {
+    Provider.of<ProductProvider>(context, listen: false).getProducts();
+
+    Timer(
+      const Duration(seconds: 3),
+      () => Navigator.pushNamed(context, '/sign-in'),
+    );
   }
 
   @override
