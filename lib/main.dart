@@ -12,6 +12,7 @@ import 'package:shoe_store/pages/sign_in_page.dart';
 import 'package:shoe_store/pages/sign_up_page.dart';
 import 'package:shoe_store/pages/splash_page.dart';
 import 'package:shoe_store/providers/auth_provider.dart';
+import 'package:shoe_store/providers/cart_provider.dart';
 import 'package:shoe_store/providers/product_provider.dart';
 import 'package:shoe_store/providers/wishlist_provider.dart';
 import 'theme.dart';
@@ -36,6 +37,9 @@ class MyApp extends StatelessWidget {
         ),
         ChangeNotifierProvider(
           create: (context) => WishlistProvider(),
+        ),
+        ChangeNotifierProvider(
+          create: (context) => CartProvider(),
         ),
       ],
       child: MaterialApp(
