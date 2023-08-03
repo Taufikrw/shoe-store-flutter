@@ -13,6 +13,7 @@ import 'package:shoe_store/pages/sign_up_page.dart';
 import 'package:shoe_store/pages/splash_page.dart';
 import 'package:shoe_store/providers/auth_provider.dart';
 import 'package:shoe_store/providers/product_provider.dart';
+import 'package:shoe_store/providers/wishlist_provider.dart';
 import 'theme.dart';
 
 void main() async {
@@ -32,6 +33,9 @@ class MyApp extends StatelessWidget {
         ),
         ChangeNotifierProvider(
           create: (context) => ProductProvider(),
+        ),
+        ChangeNotifierProvider(
+          create: (context) => WishlistProvider(),
         ),
       ],
       child: MaterialApp(

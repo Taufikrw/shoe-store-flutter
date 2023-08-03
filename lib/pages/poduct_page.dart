@@ -2,11 +2,14 @@ import 'dart:ffi';
 
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:shoe_store/models/product_model.dart';
+import 'package:shoe_store/providers/wishlist_provider.dart';
 import 'package:shoe_store/theme.dart';
 
 class ProductPage extends StatefulWidget {
   final ProductModel? product;
+
   const ProductPage(this.product, {super.key});
 
   @override
@@ -32,10 +35,11 @@ class _ProductPageState extends State<ProductPage> {
   ];
 
   int currentIndex = 0;
-  bool isWishlist = false;
 
   @override
   Widget build(BuildContext context) {
+    WishlistProvider wishlistProvider = Provider.of<WishlistProvider>(context);
+
     Future<void> showSuccessDialog() async {
       return showDialog(
         context: context,
@@ -251,10 +255,9 @@ class _ProductPageState extends State<ProductPage> {
                   ),
                   GestureDetector(
                     onTap: () {
-                      setState(() {
-                        isWishlist = !isWishlist;
-                      });
-                      if (isWishlist) {
+                      wishlistProvider.setProduct(widget.product);
+
+                      if (wishlistProvider.isWishlist(widget.product)) {
                         ScaffoldMessenger.of(context).showSnackBar(
                           SnackBar(
                             backgroundColor: secondaryColor,
@@ -277,7 +280,7 @@ class _ProductPageState extends State<ProductPage> {
                       }
                     },
                     child: Image.asset(
-                      isWishlist
+                      wishlistProvider.isWishlist(widget.product)
                           ? 'assets/love_button_enable.png'
                           : 'assets/love_button.png',
                       width: 46,
